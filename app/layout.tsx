@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { APP_CONFIG } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Flash24hr',
-  description: 'Created with v0',
+  title: APP_CONFIG.name,
+  description: APP_CONFIG.description,
   generator: 'v0.dev',
+  metadataBase: new URL(APP_CONFIG.website),
 }
 
 export default function RootLayout({

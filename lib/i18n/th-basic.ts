@@ -1,3 +1,5 @@
+import { APP_CONFIG } from "../config"
+
 export const th = {
   common: {
     download: "ดาวน์โหลด",
@@ -10,7 +12,7 @@ export const th = {
     no: "ไม่",
   },
   downloadBanner: {
-    title: "Flash24Hr APP Download",
+    title: `${APP_CONFIG.name} APP Download`,
     subtitle: "ดาวน์โหลดแอปตอนนี้",
   },
   appInfo: {
